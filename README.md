@@ -1,3 +1,5 @@
 docker-compose up -d
-docker-compose run --rm composer create-project laravel/laravel .
+set Laravel .env
+docker-compose run  --rm artisan migrate
+
 

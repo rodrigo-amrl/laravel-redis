@@ -63,7 +63,7 @@ services:
       - 6379:6379
     networks:
       - laravel_enviroment
-    command: redis-server --appendonly yes --replica-read-only no
+    command: redis-server --appendonly yes --replica-read-only no 
 
   composer:
     build:
