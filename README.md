@@ -3,6 +3,7 @@
 
 <p align="center">🚀This application is an usage example of using Redis with laravel</p>
 Usage examples: Number of video downloads, Trending Articles, User Stats. Examples are in the web.php file.
+
 ![alt text](image.png)
 
 ## Available Scripts
