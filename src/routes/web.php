@@ -48,3 +48,19 @@ Route::get("articles/{article}", function (Article $article) {
 
     return $article;
 });
+
+
+
+/**
+ * Get User Stats
+ */
+Route::get("users/{user}/stats", function ($user) {
+    //hgetall: Returns all fields and values of the hash stored at key.
+    $stats = Redis::hgetall("users.{$user}.stats");
+
+    return $stats;
+});
+/**
+ * Set Favorite Video stats
+ */
+
